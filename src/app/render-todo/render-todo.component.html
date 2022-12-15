@@ -1,0 +1,14 @@
+<h3>Todos</h3>
+<table>
+    <tr>
+        <td>Index</td>
+        <td>Task</td>
+        <td>Date</td>
+    </tr>
+    <tr *ngFor="let todo of todos,index as i">
+        <td>{{i}}</td>
+        <td>{{todo.task}}</td>
+        <td>{{todo.date}}</td>
+    </tr>
+</table>
+<button (click)="goToAddTodo()">Add Task</button>
